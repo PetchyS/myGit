@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git</title>\
 
-    <!-- git command่ U มากจากคำว่า unfile ไม่ระบุ
-        1. git and . เป็นการระบุไฟล์ที่อยู่ในโฟลเดอร์ให้อยู่ในสถานะ stage (lepositary (lepo ที่จัดเก็บโค้ด))
-            git add index.html (A )
+    <!-- git command่ 
+        touch ชื่อไฟล (สร้างไฟล์)
+        git init (ที่อยู่โฟลเดอร์)
+
+        1. git and . เป็นการระบุไฟล์ที่อยู่ในโฟลเดอร์ให้อยู่ในสถานะ stage (repository (repo ที่จัดเก็บโค้ด))
+            git add index.html (สถานะ A)
+            git reset (ทำให้ สถานะ A ถูกรีเซ็ตเป็น U)
+            git status (ตรวจเช็คสถานะที่มีการเปลี่ยนแปลงหรือสร้างทั้งหมดใน folder)
+            git commit -m "รายละเอียของเวอร์ชั่น" (เป็นการยืนยันการเก็บเวอร์ชั่น ของการพัฒนาโปรแกรม)
+
+                แสดงสถานนะด้านขวามือของชื่อไฟล์
+                A คือไฟล์ที่ถูกเพิ่มเข้าไปในสถานะ stage มีการติดตามโดยมีการอัพเดตเปลี่ยนแปลง
+                M modifind คือ สถานนะที่บอกว่าไฟล์มีการเปลี่ยนแปลง
+                U มากจากคำว่า untracking คือไม่ติดตามสถานะการเปลี่ยนแปลง
+
+                การเชื่อมต่อโฟลเดอร์กับ Git hub {
+                    git remote add origin https://github.com/PetchyS/myGit.git
+                    git branch -M main
+                    git push -u origin main 
+                }
+
      -->
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
